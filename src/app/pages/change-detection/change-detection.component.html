@@ -1,0 +1,13 @@
+
+
+<span>
+    <h3 style="margin: 0">Child Component</h3>
+   <div>
+     <span>Value: {{ control.value }}</span>
+   </div>
+</span>
+
+<div style="margin-top: 2rem;">
+    <input (focus)="onFocus()" type="text" [formControl]="control">
+    <button (click)="setValue()">Emit</button>
+</div>

@@ -1,0 +1,15 @@
+<router-outlet></router-outlet>
+<span>
+    <h3 style="margin: 0">Parent Component</h3>
+   <div>
+        <span>Value: {{ form.controls.title.value }}</span>
+   </div>
+   
+   <div>
+        <span>Touched: {{ form.controls.title.touched }}</span>
+   </div>
+</span>
+
+<form [formGroup]="form" style="margin-top: 2rem;">
+    <app-change-detection formControlName="title"></app-change-detection>
+</form>
